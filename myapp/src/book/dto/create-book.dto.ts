@@ -1,18 +1,19 @@
-import { IsArray, IsDate, IsInt, IsString } from "class-validator";
+import { Type } from "class-transformer";
+import { IsArray, IsDate, IsDateString, IsInt, IsString } from "class-validator";
 
 export class CreateBookDto {
     @IsString()
     name : string; //editable
     
     @IsDate()
+    @Type(() => Date)
     publish_date : Date;
     
     @IsString()
     category : string;
 
     @IsString()
-    @IsArray({ each: true })
-    author : string[];
+    author : string;
     
     @IsString()
     publisher : string;

@@ -11,8 +11,6 @@ export class Book {
     @Column()
     category : string;
     @Column()
-    each: true 
-    @Column()
     author : string;
     @Column()
     publisher : string;
