@@ -11,10 +11,7 @@ export class CreateBookDto {
     
     @IsString()
     category : string;
-
-    @IsString()
-    author : string;
-    
+   
     @IsString()
     publisher : string;
     

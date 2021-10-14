@@ -4,6 +4,10 @@ import { AppService } from './app.service';
 import { TestModule } from './test/test.module';
 import { BookModule } from './book/book.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { PersonModule } from './person/person.module';
+import { AuthorModule } from './author/author.module';
+import { AuthorBookModule } from './author-book/author-book.module';
+import { LoanModule } from './loan/loan.module';
 
 @Module({
   imports: [
@@ -24,7 +28,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         "synchronize": true
     }),
     TestModule, 
-    BookModule],
+    BookModule, PersonModule, AuthorModule, AuthorBookModule, LoanModule],
   controllers: [AppController],
   providers: [AppService],
 })
