@@ -14,4 +14,5 @@ export class Author {
 
     @OneToMany(type => AuthorBook, relacion => relacion.author)
     book_author: AuthorBook[]
+
 }
