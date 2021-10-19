@@ -12,6 +12,6 @@ export class Author {
     @Column({ default: '' })
     origen?: string;
 
-    @OneToMany(type => AuthorBook, relacion => relacion.author)
-    book_author: AuthorBook[]
+ /*   @OneToMany(type => AuthorBook, relacion => relacion.author)
+    book_author: AuthorBook[]*/
 }

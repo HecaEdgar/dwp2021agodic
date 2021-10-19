@@ -7,12 +7,12 @@ export class AuthorBook {
     @PrimaryGeneratedColumn()
     idbook_author: number;
 
-    @ManyToOne(type => Author)
+ /*   @ManyToOne(type => Author)
     @Column("author_id")
     author: Author;
 
     @ManyToOne(type => Book)
     @Column("book_id")
     book: Book;
-
+*/
 }
