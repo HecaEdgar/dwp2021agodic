@@ -75,4 +75,4 @@ function load(load: any) {
 function editedloan(editedloan: any) {
   throw new Error('Function not implemented.');
 }
-
+}
