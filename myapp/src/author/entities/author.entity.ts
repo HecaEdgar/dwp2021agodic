@@ -13,5 +13,6 @@ export class Author {
     origen?: string;
 
     @OneToMany(type => AuthorBook, relacion => relacion.author)
-    book_author: AuthorBook[] 
+    book_author: AuthorBook[]
+
 }

@@ -17,4 +17,3 @@ export class CreatePersonDto {
     @IsString()
     phone: string;
 }
-

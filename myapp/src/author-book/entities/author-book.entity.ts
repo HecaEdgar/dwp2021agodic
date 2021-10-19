@@ -13,6 +13,5 @@ export class AuthorBook {
 
     @ManyToOne(type => Book)
     @Column("book_id")
-    book: Book; 
-
+    book: Book;
 }
